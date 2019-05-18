@@ -63,7 +63,7 @@ function sayHello() {
   function addTwoNumbers(a, b) {
       return a + b
   }
- console.log(addTwoNumbers(5, 101))
+ addTwoNumbers(5, 101)
   
   
   
@@ -87,8 +87,15 @@ function sayHello() {
   -----------------------------------------------------------------*/
   // Your solution for 03-sumNumbers here:
   
+  function sumNumbers(numbers) {
+    var total = 0;
+    for(let i = 0; i < numbers.length; i++) {
+      total += numbers[i];
+    }
+    return total;
+  }
   
-  
+    console.log(sumNumbers([10, 213 ,654, 7645]))
   
   
   /*-----------------------------------------------------------------
