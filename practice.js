@@ -36,8 +36,8 @@ function sayHello() {
   function addOne(n) {
       return n + 1 
   }
-  console.log(addOne(1)) //=> 2
-//   addOne(-5) //=> -4
+  addOne(1) //=> 2
+  addOne(-5) //=> -4
   
   
   
@@ -60,7 +60,10 @@ function sayHello() {
   addTwoNumbers('Hello', 5) //=> NaN
   -----------------------------------------------------------------*/
   // Your solution for 02-addTwoNumbers here:
-  
+  function addTwoNumbers(a, b) {
+      return a + b
+  }
+ console.log(addTwoNumbers(5, 101))
   
   
   
@@ -793,7 +796,3 @@ function sayHello() {
 //   - The second argument is an integer representing the number of CPU "threads" available to process all of the tasks in the queue.
 //   - The totalTaskTime function should return an integer representing the total time it is going to take to complete all of the tasks in the queue.
 //   - You may mutate the "queue" array (first argument) if you wish.
-  
-//   Hint:
-  
-//   // - Solve it with paper and pencil first.  Look for patterns and generalize.
