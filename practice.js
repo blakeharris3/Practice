@@ -117,7 +117,15 @@ function sayHello() {
   -----------------------------------------------------------------*/
   // Your solution for 04-addList here:
   
-  
+  function addList() {
+    var sum = 0
+    for (var i = 0; i < arguments.length; i++) {
+      sum += arguments[i]
+    }
+    return sum
+  }
+
+    console.log(addList(1, 234, 5321))
   
   
   
