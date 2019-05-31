@@ -95,7 +95,7 @@ function sayHello() {
     return total;
   }
   
-    console.log(sumNumbers([10, 213 ,654, 7645]))
+    // console.log(sumNumbers([10, 213 ,654, 7645]))
   
   
   /*-----------------------------------------------------------------
@@ -125,7 +125,7 @@ function sayHello() {
     return sum
   }
 
-    console.log(addList(1, 234, 5321))
+    // console.log(addList(1, 234, 5321))
   
   
   
@@ -148,11 +148,11 @@ function sayHello() {
   computeRemainder(10.5, 3) //=> 1.5
   -----------------------------------------------------------------*/
   // Your solution for 05-computeRemainder:
-  
-  
-  
-  
-  
+  function computeRemainder(dividend, divisor) {
+    if (divisor === 0) return Infinity;
+    return dividend - (Math.floor(dividend / divisor) * divisor);
+  }
+    console.log(computeRemainder(10.5, 3)) //=> 1.5
   /*-----------------------------------------------------------------
   Challenge: 06-range
   
